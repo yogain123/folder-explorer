@@ -9,7 +9,7 @@ function App() {
   const fetchDataFrombackend = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve(folderData);
+        resolve({ name: "root", children: folderData });
       }, 1000);
     });
   };
